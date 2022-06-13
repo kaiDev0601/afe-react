@@ -1,0 +1,35 @@
+.nav-link.active{
+    background: #20BCE6;
+    color:white;
+}
+
+.sidebar{
+    box-shadow:grey 2px 2px 8px 1px;
+    background:white;
+}
+
+.afe-mark{
+    margin-left:1.5em;
+    font-size:3rem;
+}
+
+@media (max-width: 1200px) {
+    .sidebar{
+        display:none;
+    }
+}
+
+.side-bar-content{
+    padding: 0 !important;;
+    margin:0;
+}
+
+
+.side-bar-content ul,
+ .side-bar-content ul .nav-item{
+    width:100%;
+}
+
+.side-bar-content .nav-link{
+    padding: 0.7em !important;
+}

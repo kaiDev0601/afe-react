@@ -1,0 +1,108 @@
+.up-page-content{
+    margin-top:3em;
+    margin-left:3em;
+    box-shadow:none;
+    border-radius: 10px;
+    padding:3em;
+}
+
+.up-tab-checked{
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    line-height: 26px !important;
+    /* identical to box height */
+
+    color: #20BCE6 !important;
+}
+
+.up-tab{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+    text-decoration:none;
+}
+
+.up-container-left{
+    min-height: 30em;
+    left: 309px;
+    top: 196px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.up-profile-tabs{
+    margin-bottom:2em;
+}
+
+.up-user-avatar{
+    width:10em;
+    height:10em;
+    margin-left:4em;
+    margin-top:1em;
+}
+
+.up-container-left p, 
+.up-container-left img, 
+.up-container-left button{
+    margin-top: 0.5em;
+}
+
+.up-user-name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+    text-align: center;
+}
+
+.up-user-type{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.up-upload-avatar{
+    
+    background: #0F0D9A;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-left:20%;
+    margin-right:20%;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+}
+
+.up-container-right{    
+    margin-left:2em;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding:2em;
+}

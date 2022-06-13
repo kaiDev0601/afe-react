@@ -1,0 +1,49 @@
+
+.ud-page-content{
+    margin-top:3em;
+    margin-left:3em;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 25px rgba(15, 13, 154, 0.3);
+    border-radius: 10px;
+    padding:3em;
+}
+
+.ud-res-header{
+    margin-bottom:3em;
+}
+
+.ud-res-content h3{
+    padding-left:0;
+}
+
+.ud-notification-item{
+    width: 742px;
+    height: 109px;
+    margin:0;
+
+    background: rgba(15, 13, 154, 0.3);
+    border-radius: 10px;
+    padding:1em;
+    display: flex;
+    align-items: center;
+}
+
+.ud-notification-item img{
+    width:40px;
+    height: 40px;
+}
+
+.ud-notification-item p{
+        
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
