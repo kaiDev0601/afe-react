@@ -1,8 +1,4 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-import { GiNotebook } from 'react-icons/gi';
-import Form from 'react-bootstrap/Form';
 
 import "../../assets/css/admin/dashboard.css"
 import { Button, Modal } from 'react-bootstrap';

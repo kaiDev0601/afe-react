@@ -34,11 +34,11 @@ const UserAddAfeRequest = () => {
                     <div className='aafe-container'>
                         <div className='row mb-3'>
                             <div className='col-sm-12'>
-                                <a href="#" className={classnames('aafe-show-tab', {'active' : afeRequestStep === 0, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 0)}>Details</a>
-                                <a href="#" className={classnames('aafe-show-tab', {'active' : afeRequestStep === 1, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 1)}>Project Justification & Quotation</a>
-                                <a href="#" className={classnames('aafe-show-tab', {'active' : afeRequestStep === 2, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 2)}>Costing Details</a>
-                                <a href="#" className={classnames('aafe-show-tab', {'active' : afeRequestStep === 3, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 3)}>ROI Project Analysis</a>
-                                <a href="#" className={classnames('aafe-show-tab', {'active' : afeRequestStep === 4, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 4)}>Other Expenses</a>
+                                <a href={"#"} className={classnames('aafe-show-tab', {'active' : afeRequestStep === 0, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 0)}>Details</a>
+                                <a href={"#"} className={classnames('aafe-show-tab', {'active' : afeRequestStep === 1, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 1)}>Project Justification & Quotation</a>
+                                <a href={"#"} className={classnames('aafe-show-tab', {'active' : afeRequestStep === 2, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 2)}>Costing Details</a>
+                                <a href={"#"} className={classnames('aafe-show-tab', {'active' : afeRequestStep === 3, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 3)}>ROI Project Analysis</a>
+                                <a href={"#"} className={classnames('aafe-show-tab', {'active' : afeRequestStep === 4, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 4)}>Other Expenses</a>
                             </div>
                         </div>
                         

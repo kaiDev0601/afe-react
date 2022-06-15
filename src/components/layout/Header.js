@@ -19,36 +19,36 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown user-nav">
-                            <a className="user-item nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <a className="user-item nav-link dropdown-toggle" href={"#"} role="button" data-bs-toggle="dropdown">
                                 <div className='row'>
                                     <div className='col-sm-6'>
                                         <p className='row user-name'>Person 3</p>
                                         <p className='row user-type'>User</p>
                                     </div>
                                     <div className='col-sm-6'>
-                                        <img className="user-icon" src={userIcon} />
+                                        <img className="user-icon" src={userIcon} alt="a"/>
                                         <FontAwesomeIcon className='user-down-arrow' icon={faChevronDown} />
                                     </div>
                                 </div>
                             </a>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/user/profile">Profile Settings</Link></li>
-                                <li><a className="dropdown-item" href="#">Notifications</a></li>
+                                <li><a className="dropdown-item" href={"#"}>Notifications</a></li>
                                 <hr/>
-                                <li><a className="dropdown-item" href="#">Logout</a></li>
+                                <li><a className="dropdown-item" href={"#"}>Logout</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#" className='nav-link signout'><FontAwesomeIcon icon={faBell} /></a>
+                            <a href={"#"} className='nav-link signout'><FontAwesomeIcon icon={faBell} /></a>
                         </li>
                         <li className='nav-splitter'>|</li>
                         <li>
-                            <a href="#" className="nav-link notification dropdown-toggle" data-bs-toggle="dropdown"><FontAwesomeIcon icon={faSignOut} /></a>
+                            <a href={"#"} className="nav-link notification dropdown-toggle" data-bs-toggle="dropdown"><FontAwesomeIcon icon={faSignOut} /></a>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/user/profile">a Settings</Link></li>
-                                <li><a className="dropdown-item" href="#">Notifications</a></li>
+                                <li><a className="dropdown-item" href={"#"}>Notifications</a></li>
                                 <hr/>
-                                <li><a className="dropdown-item" href="#">Logout</a></li>
+                                <li><a className="dropdown-item" href={"#"}>Logout</a></li>
                             </ul>
 
                         </li>

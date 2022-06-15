@@ -20,9 +20,9 @@ const ProjectType = () => {
         <div className='white-container h-shadow'>
             <div className='row'>
                 <div className='col-sm-12 mb-2'>
-                    <a href="#" className={classnames('sp-show-tab', {'active' : afeRequestStep === 0, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 0)}>Records</a>
-                    <a href="#" className={classnames('sp-show-tab', {'active' : afeRequestStep === 1, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 1)}>Upload from Database</a>
-                    <a href="#" className={classnames('sp-show-tab', {'active' : afeRequestStep === 2, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 2)}>Upload CSV</a>
+                    <a href={"#"} className={classnames('sp-show-tab', {'active' : afeRequestStep === 0, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 0)}>Records</a>
+                    <a href={"#"} className={classnames('sp-show-tab', {'active' : afeRequestStep === 1, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 1)}>Upload from Database</a>
+                    <a href={"#"} className={classnames('sp-show-tab', {'active' : afeRequestStep === 2, 'inactive' : afeRequestStep !== 0})} onClick={e => onClick(e, 2)}>Upload CSV</a>
                 </div>
             </div>
             

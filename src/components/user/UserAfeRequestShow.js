@@ -34,7 +34,7 @@ const UserAfeRequestShow = () => {
             "5-3-2022",
             "Pending(Level 1)",
             "Approver Name",
-            <a href="#"><FcRefresh/></a>
+            <a href={"#"}><FcRefresh/></a>
         ],
         [
             "100020",
@@ -45,7 +45,7 @@ const UserAfeRequestShow = () => {
             "5-3-2022",
             "Pending(Level 1)",
             "Approver Name",
-            <a href="#"><FcRefresh/></a>
+            <a href={"#"}><FcRefresh/></a>
         ]
     ];
 
@@ -76,12 +76,12 @@ const UserAfeRequestShow = () => {
                         </div>
                         <div className='row afe-show-tabs d-flex align-items-center mb-3'>
                             <div className='col-sm-8'>
-                                <a href="#" className='afe-show-tab mx-1 active'>All</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Pending</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Approved</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Rejected</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Cancelled</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>On Hold</a>
+                                <a href={"#"} className='afe-show-tab mx-1 active'>All</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Pending</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Approved</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Rejected</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Cancelled</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>On Hold</a>
                             </div>
                             <div className='col-sm-4'>
                                 <div className='v-center d-flex justify-content-end mx'>

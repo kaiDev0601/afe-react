@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { GiNotebook } from 'react-icons/gi';
 import Form from 'react-bootstrap/Form';
@@ -71,7 +70,7 @@ const ApprovalDashboard = () => {
                                                 <h4>Today</h4>
                                                 <div className='apvd-notification-item'>
                                                     <div className="d-flex flex-row">
-                                                        <img className="sz-40px mx-2" src="../Avatar.png"/>
+                                                        <img className="sz-40px mx-2" src="../Avatar.png" alt="a"/>
                                                         <p>Annette Watson is waiting for her proposal for expenditure request form</p>
                                                     </div>
                                                     <div className="d-flex justify-content-end mt-n2">
@@ -83,11 +82,11 @@ const ApprovalDashboard = () => {
                                                 <h4>Yesterday</h4>
                                             </div>
                                             <div className='d-flex flex-row apvd-notif-before-item'>
-                                                <img className='sz-40px mx-2' src="../Avatar.png"/>
+                                                <img className='sz-40px mx-2' src="../Avatar.png" alt="a"/>
                                                 <p>Annette Watson is waiting for her proposal for expenditure request form</p>
                                             </div>
                                             <div className='d-flex flex-row apvd-notif-before-item'>
-                                                <img className='sz-40px mx-2' src="../Avatar.png"/>
+                                                <img className='sz-40px mx-2' src="../Avatar.png" alt="a"/>
                                                 <p>Annette Watson is waiting for her proposal for expenditure request form</p>
                                             </div>
                                         </div>
@@ -112,7 +111,7 @@ const ApprovalDashboard = () => {
                                         <div className='col-sm-12'>
                                             <div className='row'>
                                                 <div className='col-sm-6'><div className='row'>
-                                                    <div className='col-sm-3'><img className="sz-3em"src="../Avatar.png"/></div>
+                                                    <div className='col-sm-3'><img className="sz-3em"src="../Avatar.png"  alt="a"/></div>
                                                     <div className='col-sm-9'>
                                                         <div className='row'><p>Bernard Murphy</p></div>
                                                         <div className='row'><p className="lightgreen">Approved</p></div>
@@ -145,7 +144,7 @@ const ApprovalDashboard = () => {
                                         <div className='col-sm-12'>
                                             <div className='row'>
                                                 <div className='col-sm-6'><div className='row'>
-                                                    <div className='col-sm-3'><img className="sz-3em"src="../Avatar.png"/></div>
+                                                    <div className='col-sm-3'><img className="sz-3em"src="../Avatar.png" alt="a"/></div>
                                                     <div className='col-sm-9'>
                                                         <div className='row'><p>Bernard Murphy</p></div>
                                                         <div className='row'><p className="lightgreen">Approved</p></div>

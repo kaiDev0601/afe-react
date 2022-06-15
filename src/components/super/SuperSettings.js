@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import classnames from 'classnames';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 
-import RequestDetail from './afe_tabs/RequestDetail';
 
 import '../../assets/css/super/settings.css';
 import SettingsFacility from './setting_tabs/SettingsFacility';

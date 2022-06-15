@@ -29,8 +29,8 @@ const UserProfile = () => {
                     <Header />
                     <div className='up-page-content container'>
                         <div className='up-profile-tabs d-flex flex-row mb-2'>
-                            <a className={classnames('tab mx-2', {'tab-checked': isProfileUpdate})} href="#" onClick={e => onClickType(e, true)}>User Profile</a>
-                            <a className={classnames('tab mx-2', {'tab-checked': !isProfileUpdate})} href="#" onClick={e => onClickType(e, false)}>Change Password</a>
+                            <a className={classnames('tab mx-2', {'tab-checked': isProfileUpdate})} href={"#"} onClick={e => onClickType(e, true)}>User Profile</a>
+                            <a className={classnames('tab mx-2', {'tab-checked': !isProfileUpdate})} href={"#"} onClick={e => onClickType(e, false)}>Change Password</a>
                         </div>
 
                         <div className='row'>

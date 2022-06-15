@@ -134,7 +134,7 @@ const RecordsShow = () => {
             "000-01",
             "4-6-2022",
             "Person 1",
-            <a href="#"><IoMdClose className='text-danger'/></a>
+            <a href={"#"}><IoMdClose className='text-danger'/></a>
         ],
         [
             1,
@@ -142,21 +142,21 @@ const RecordsShow = () => {
             "000-01",
             "4-6-2022",
             "Person 1",
-            <a href="#"><IoMdClose className='text-danger'/></a>
+            <a href={"#"}><IoMdClose className='text-danger'/></a>
         ],[
             1,
             "000-01",
             "000-01",
             "4-6-2022",
             "Person 1",
-            <a href="#"><IoMdClose className='text-danger'/></a>
+            <a href={"#"}><IoMdClose className='text-danger'/></a>
         ],[
             1,
             "000-01",
             "000-01",
             "4-6-2022",
             "Person 1",
-            <a href="#"><IoMdClose className='text-danger'/></a>
+            <a href={"#"}><IoMdClose className='text-danger'/></a>
         ],
     ];
 

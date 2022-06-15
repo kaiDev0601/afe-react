@@ -36,11 +36,11 @@ const SuperAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><b className='text-warning m-l-1'>O</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><b className='text-warning m-l-1'>O</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ],
         [
@@ -53,11 +53,11 @@ const SuperAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><b className='text-warning m-l-1'>O</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><b className='text-warning m-l-1'>O</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ],
         [
@@ -70,11 +70,11 @@ const SuperAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><b className='text-warning m-l-1'>O</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><b className='text-warning m-l-1'>O</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ],
         [
@@ -87,11 +87,11 @@ const SuperAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><b className='text-warning m-l-1'>O</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><b className='text-warning m-l-1'>O</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ]
     ];

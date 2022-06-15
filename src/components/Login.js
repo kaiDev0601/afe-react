@@ -5,7 +5,6 @@ import {
   Col,
   InputGroup,
   FormControl,
-  Form,
   Card,
   Button
 } from 'react-bootstrap';

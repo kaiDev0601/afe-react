@@ -36,10 +36,10 @@ const AdminAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ],
         [
@@ -52,10 +52,10 @@ const AdminAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ],
         [
@@ -68,10 +68,10 @@ const AdminAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ],
         [
@@ -84,10 +84,10 @@ const AdminAfeRequestShow = () => {
             "Pending(Level 1)",
             "Approver Name",
             <span>
-                <a href="#"><b className='green m-l-1'>A</b></a>
-                <a href="#"><b className='red m-l-1'>R</b></a>
-                <a href="#"><b className='blue m-l-1'>C</b></a>
-                <a href="#"><AiOutlineFilePdf color='red'/></a>
+                <a href={"#"}><b className='green m-l-1'>A</b></a>
+                <a href={"#"}><b className='red m-l-1'>R</b></a>
+                <a href={"#"}><b className='blue m-l-1'>C</b></a>
+                <a href={"#"}><AiOutlineFilePdf color='red'/></a>
             </span>
         ]
     ];
@@ -117,12 +117,12 @@ const AdminAfeRequestShow = () => {
                         </div>
                         <div className='row afe-show-tabs d-flex align-items-center mb-3'>
                             <div className='col-sm-8'>
-                                <a href="#" className='afe-show-tab mx-1 active'>All</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Pending</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Approved</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Rejected</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>Cancelled</a>
-                                <a href="#" className='afe-show-tab mx-2 inactive'>On Hold</a>
+                                <a href={"#"} className='afe-show-tab mx-1 active'>All</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Pending</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Approved</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Rejected</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>Cancelled</a>
+                                <a href={"#"} className='afe-show-tab mx-2 inactive'>On Hold</a>
                             </div>
                             <div className='col-sm-4'>
                                 <div className='v-center d-flex justify-content-end mx'>

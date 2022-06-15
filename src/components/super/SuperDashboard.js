@@ -66,7 +66,7 @@ const SuperDashboard = () => {
                                                 <h4>Today</h4>
                                                 <div className='apvd-notification-item'>
                                                     <div className="d-flex flex-row">
-                                                        <img className="sz-40px mx-2" src="../Avatar.png"/>
+                                                        <img className="sz-40px mx-2" src="../Avatar.png" alt="a"/>
                                                         <p>Annette Watson is waiting for her proposal for expenditure request form</p>
                                                     </div>
                                                     <div className="d-flex justify-content-end mt-n2">
@@ -100,7 +100,7 @@ const SuperDashboard = () => {
                                         <div className='col-sm-12'>
                                             <div className='row d-flex align-items-center mb-2'>
                                                 <div className='col-sm-2'>
-                                                    <img className='sz-40px' src="../Avatar.png"/>
+                                                    <img className='sz-40px' src="../Avatar.png" alt="a"/>
                                                 </div>
                                                 <div className='col-sm-10'>
                                                     <p className="text-muted">Annette Water</p>
@@ -108,7 +108,7 @@ const SuperDashboard = () => {
                                             </div>
                                             <div className='row d-flex align-items-center mb-2'>
                                                 <div className='col-sm-2'>
-                                                    <img className='sz-40px' src="../Avatar.png"/>
+                                                    <img className='sz-40px' src="../Avatar.png" alt="a"/>
                                                 </div>
                                                 <div className='col-sm-10'>
                                                     <p className="text-muted">Annette Water</p>
@@ -116,7 +116,7 @@ const SuperDashboard = () => {
                                             </div>
                                             <div className='row d-flex align-items-center mb-2'>
                                                 <div className='col-sm-2'>
-                                                    <img className='sz-40px' src="../Avatar.png"/>
+                                                    <img className='sz-40px' src="../Avatar.png" alt="a"/>
                                                 </div>
                                                 <div className='col-sm-10'>
                                                     <p className="text-muted">Annette Water</p>
@@ -124,7 +124,7 @@ const SuperDashboard = () => {
                                             </div>
                                             <div className='row d-flex align-items-center mb-2'>
                                                 <div className='col-sm-2'>
-                                                    <img className='sz-40px' src="../Avatar.png"/>
+                                                    <img className='sz-40px' src="../Avatar.png" alt="a"/>
                                                 </div>
                                                 <div className='col-sm-10'>
                                                     <p className="text-muted">Annette Water</p>

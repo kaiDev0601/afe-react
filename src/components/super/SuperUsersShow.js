@@ -147,7 +147,7 @@ const SuperUsersShow = () => {
             "Admin",
             "5-3-2022",
             "Dough Jones",
-            <a href="#"><IoMdClose className='text-danger'/></a>
+            <a href={"#"}><IoMdClose className='text-danger'/></a>
         ],
         [
             1,
@@ -156,7 +156,7 @@ const SuperUsersShow = () => {
             "Admin",
             "5-3-2022",
             "Dough Jones",
-            <a href="#"><IoMdClose className='text-danger'/></a>
+            <a href={"#"}><IoMdClose className='text-danger'/></a>
         ],
         [
             1,
@@ -165,7 +165,7 @@ const SuperUsersShow = () => {
             "Admin",
             "5-3-2022",
             "Dough Jones",
-            <a href="#"><IoMdClose className='text-danger'/></a>
+            <a href={"#"}><IoMdClose className='text-danger'/></a>
         ]
     ];
 
