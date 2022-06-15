@@ -1,0 +1,37 @@
+.nav-link.active{
+    background: #20BCE6 !important;
+    color:white;
+}
+
+.sidebar{
+    box-shadow:grey 2px 2px 8px 1px;
+    background:white;
+}
+
+.afe-mark{
+    margin-left:1.5em;
+    font-size:3rem;
+}
+
+.side-bar-content{
+    padding: 0 !important;;
+    margin:0;
+}
+
+
+.side-bar-content ul,
+ .side-bar-content ul .nav-item{
+    width:100%;
+}
+
+.side-bar-content .nav-link{
+    padding: 0.7em !important;
+}
+
+.afe-logo{
+    color: #0f0d9a !important;
+}
+
+.nav-link{
+    color:black;
+}

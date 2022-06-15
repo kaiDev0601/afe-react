@@ -1,0 +1,93 @@
+
+
+.afe-container .row{
+    margin-bottom: 1rem;
+}
+
+.afe-show-tab{
+    font-weight: 500;
+    font-size: 1em;
+    
+    color: #494E67;
+}
+
+.afe-show-tab.inactive{
+    text-decoration: none;
+}
+
+.afe-show-tab:hover{
+    cursor:pointer;
+}
+
+.afe-show-tab.active{
+    /* identical to box height, or 150% */
+    color: #20BCE6;
+}
+
+.afe-request-table{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.afe-request-table thead th{
+    padding: 1rem;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.afe-request-table tbody td{
+    padding:1rem; 
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #969CBA;
+}
+
+.afe-table-page-state{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.afe-table-global{
+    
+font-weight: 400;
+font-size: 10px;
+line-height: 24px;
+/* identical to box height, or 240% */
+
+letter-spacing: 0.01em;
+
+color: rgba(0, 0, 0, 0.7);
+
+}
+
+.page-navigator{
+    text-align: right;
+}
+.page-navigator button.btn-info{
+    color:white;
+}

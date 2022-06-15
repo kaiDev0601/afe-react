@@ -1,0 +1,115 @@
+.adus-container{
+    margin: 3em !important;
+}
+
+.adus-container .row{
+    margin-bottom: 1rem;
+}
+
+.adus-add-request,
+.adus-add-request:hover,
+.adus-add-request:focus{
+    color:white;
+}
+
+.adus-container-heading{
+    margin-bottom: 1rem;
+}
+.adus-container-heading .col-sm-4{
+    position:absolute;
+    right:0;
+}
+
+.adus-search-field,
+.adus-search-field:hover,
+.adus-search-field:focus{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.adus-show-tab{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+    margin-right:1em;
+
+    color: #494E67;
+}
+
+.adus-show-tab.inactive{
+    text-decoration: none;
+}
+
+.adus-show-tab:hover{
+    cursor:pointer;
+}
+
+.adus-show-tab.active{
+    /* identical to box height, or 150% */
+    color: #20BCE6;
+}
+
+.adus-request-table{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.adus-request-table thead th{
+    padding: 1rem;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.adus-request-table tbody td{
+    padding:1rem; 
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #969CBA;
+}
+
+.adus-table-page-state{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.adus-table-global{
+    font-size: 0.8em;
+}
+
+.page-navigator{
+    text-align: right;
+}
+.page-navigator button.btn-info{
+    color:white;
+}

@@ -1,0 +1,87 @@
+.apvd-status-div{
+    padding:1em;
+    width: 100%;
+    min-height: 5em;
+    
+    background: #20BCE6;
+    box-shadow: 0px 5px 25px rgba(32, 188, 230, 0.68);
+    border-radius: 10px;
+}
+
+.apvd-pending-icon-div{
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    width: 3.5em;
+    height:3.5em;
+}
+
+.apvd-pending-icon{
+    margin-top:0.1em;
+    font-size:3em;
+}
+
+.apvd-res-header{
+    margin-bottom:1em;
+}
+
+.apvd-res-content h3{
+    padding-left:0;
+}
+
+.apvd-notification-item{
+    width: 742px;
+    height: 109px;
+    margin:0;
+
+    background: rgba(15, 13, 154, 0.3);
+    border-radius: 10px;
+    padding:1em;
+}
+
+.apvd-notification-item img{
+    width:40px;
+    height: 40px;
+}
+
+.apvd-notification-item p{
+        
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+
+.apvd-notif-before-item p{
+        
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+}
+
+
+.apvd-approved-exp-cont{
+    box-shadow: 0px 5px 25px #DADCE4;
+    border-radius: 10px;
+    padding:1em;
+}
+
+
+.apvd-right-container p{
+    font-size:0.8em;
+}

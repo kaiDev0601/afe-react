@@ -1,0 +1,115 @@
+.apvafe-container{
+    margin: 3em !important;
+}
+
+.apvafe-container .row{
+    margin-bottom: 1rem;
+}
+
+.apvafe-add-request,
+.apvafe-add-request:hover,
+.apvafe-add-request:focus{
+    color:white;
+}
+
+.apvafe-container-heading{
+    margin-bottom: 1rem;
+}
+.apvafe-container-heading .col-sm-4{
+    position:absolute;
+    right:0;
+}
+
+.apvafe-search-field,
+.apvafe-search-field:hover,
+.apvafe-search-field:focus{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.apvafe-show-tab{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+    margin-right:1em;
+
+    color: #494E67;
+}
+
+.apvafe-show-tab.inactive{
+    text-decoration: none;
+}
+
+.apvafe-show-tab:hover{
+    cursor:pointer;
+}
+
+.apvafe-show-tab.active{
+    /* identical to box height, or 150% */
+    color: #20BCE6;
+}
+
+.apvafe-request-table{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.apvafe-request-table thead th{
+    padding: 1rem;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.apvafe-request-table tbody td{
+    padding:1rem; 
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #969CBA;
+}
+
+.apvafe-table-page-state{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.apvafe-table-global{
+    font-size: 0.8em;
+}
+
+.page-navigator{
+    text-align: right;
+}
+.page-navigator button.btn-info{
+    color:white;
+}

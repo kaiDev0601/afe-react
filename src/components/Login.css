@@ -1,0 +1,62 @@
+.col-md-6 {
+    padding: 0px !important;
+}
+
+.half_left {
+    width: 100%;  
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 2s ease;
+    background-image: url("../img/landing_picture.png");
+    box-shadow:10px 0px 25px 10px rgb(32 188 230 / 30%);
+    height:100vh;
+    overflow: unset;
+    background-size: 100% 100%;
+    display: flex;
+   align-items: center;
+} 
+
+
+ .nav-content{
+   background: rgba(255, 255, 255, 0.3);
+   height:30%;
+   width:80%;
+   margin:0 auto;
+   padding:3.5rem;
+   border:1px solid #c4c4c4; 
+   border-radius:25px; 
+}
+
+
+.nav-content h1{
+   color:white;
+   float:right;
+   Font-style: Bold;
+   Font-size: 90px;
+    }
+
+.nav-content h3{
+    color:white;
+    height:1.17em;
+    font-size:31px;
+}
+.logincard{
+    width: 80%;
+    margin: auto;
+    padding: 55px;
+    box-shadow: 0px 4px 25px rgb(32 188 230 / 30%);
+    border-radius: 15px;
+    height: 493px;
+   
+}
+
+.btn-info{
+    width:100%;
+    color:white!important;
+}
+
+.card  h5{
+    color:#20BCE6;
+    text-align:right !important;
+}
+
