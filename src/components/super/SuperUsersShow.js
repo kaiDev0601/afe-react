@@ -16,120 +16,6 @@ import { IoMdClose } from 'react-icons/io';
 import MyInput from '../common/MyInput';
 import MyTable from '../common/MyTable';
 import { setUserType } from '../../actions/auth';
-
-
-const MyVerticallyCenteredModal = (props) => {
-    return (
-        <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            Add User
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-            <div className='row'>
-                <div className='col-sm-6'>
-                    <MyInput
-                        controlId = "formBasicEmail" 
-                        label="First Name" 
-                        type="text" 
-                        id="inputPassword5"
-                    />
-                </div>
-                <div className='col-sm-6'>
-                    <MyInput
-                        controlId = "formBasicEmail" 
-                        label="Last Name" 
-                        type="text" 
-                        id="inputPassword5"
-                    />
-
-                </div>
-            </div>
-            <div className='row'>
-                <div className='col-sm-6'>
-                    <MyInput
-                        controlId = "formBasicEmail" 
-                        label="Email" 
-                        type="text" 
-                        id="inputPassword5"
-                        addOnIcon={<AiOutlineMail/>}
-                    />
-                </div>
-                <div className='col-sm-6'>
-                    <MyInput
-                        controlId = "formBasicEmail" 
-                        label="Phone Number Name" 
-                        type="text" 
-                        id="inputPassword5"
-                        addOnIcon={<AiTwotonePhone/>}
-                    />
-
-                </div>
-            </div>
-            <div className='row'>
-                <div className='col-sm-12'>
-                    <MyInput
-                        controlId = "formBasicEmail" 
-                        label="Address" 
-                        type="text" 
-                        id="inputPassword5"
-                    />
-
-                </div>
-            </div>
-            <div className='row'>
-                <div className='col-sm-6'>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Department</Form.Label>
-                        <Form.Select aria-label="Default select example">
-                            <option>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </Form.Select>
-                    </Form.Group>
-                </div>
-                <div className='col-sm-6'>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Facility</Form.Label>
-                        <Form.Select aria-label="Default select example">
-                            <option>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </Form.Select>
-                    </Form.Group>
-                </div>
-            </div>
-            <div className='row'>
-                <div className='col-sm-6'>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Select Roles</Form.Label>
-                        <Form.Select aria-label="Default select example">
-                            <option>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </Form.Select>
-                    </Form.Group>
-                </div>
-            </div>
-        </Modal.Body>
-        <Modal.Footer className="d-flex justify-content-center">
-          <Button className="btn-darkblue" onClick={props.onHide}>Save</Button>
-        </Modal.Footer>
-      </Modal>
-    );
-}
-
-
-
 const SuperUsersShow = ({
     auth,
     setUserType
@@ -137,8 +23,6 @@ const SuperUsersShow = ({
     useEffect(() => {
         setUserType('super');
     }, [setUserType]);
-
-    const [modalShow, setModalShow] = useState(false);
 
     
     const tHeaders = [  
@@ -189,7 +73,7 @@ const SuperUsersShow = ({
                     <div className="container adus-container">
                     <div className='row afe-container-heading d-flex justify-content-between mb-3'>
                             <div className='col-sm-3'>
-                                <Button className="btn btn-darkblue text-white" onClick={() => setModalShow(true)}>+ Add User</Button>
+                                <a className="btn btn-darkblue text-white" href="/super/add_user">+ Add User</a>
                             </div>
                             <div className='col-sm-4'>
                                 <div className='d-flex flex-row'>
@@ -232,10 +116,6 @@ const SuperUsersShow = ({
                     </div>
                 </div>
             </div>
-            <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-            />
         </div>
     )
 };

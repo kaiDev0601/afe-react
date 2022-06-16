@@ -23,6 +23,7 @@ import SuperSettings from './components/super/SuperSettings';
 
 import { Provider } from 'react-redux';
 import store from './store';
+import SuperAddUser from './components/super/SuperAddUser';
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/super/add_afe_request" element={<SuperAddAfeRequest />}></Route>
           <Route path="/super/users_show" element={<SuperUsersShow />}></Route>
           <Route path="/super/settings" element={<SuperSettings />}></Route>
+          <Route path="/super/add_user" element={<SuperAddUser />}></Route>
 
         </Routes>
       </Router>

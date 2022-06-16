@@ -115,7 +115,7 @@ const SuperAfeRequestShow = ({
                     <div className="container">
                         <div className='row afe-container-heading d-flex justify-content-between mb-3'>
                             <div className='col-sm-3'>
-                                <Link className="afe-add-request btn btn-info text-white" to="/user/add_afe_request">+ Add Request</Link>
+                                <Link className="afe-add-request btn btn-info text-white" to="/super/add_afe_request">+ Add Request</Link>
                             </div>
                             <div className='col-sm-4'>
                                 <div className='d-flex flex-row'>

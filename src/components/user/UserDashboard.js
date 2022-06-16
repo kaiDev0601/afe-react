@@ -22,7 +22,7 @@ const UserDashboard = ({
                 <Navbar />
                 <div className="col-md-9 col-xl-10 page-container">
                     <Header />
-                    <div className='page-content white-container h-shadow container'>
+                    <div className='page-content white-container h-shadow p-3em'>
                         <div className='row mb-4'>
                             <h4>Notifications</h4>
                         </div>

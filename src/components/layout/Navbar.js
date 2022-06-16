@@ -108,7 +108,7 @@ const Navbar = ({auth}) => {
 
     return (
         <div className="col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
-            <div className="d-flex flex-column align-items-center px-3 pt-2 text-white min-vh-100 side-bar-content">
+            <div className="d-flex flex-column align-items-center px-3 pt-2 min-vh-100 side-bar-content">
                 <a href={"#"} className="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-blue text-decoration-none">
                     <span className="fs-10 d-none d-sm-inline afe-mark afe-logo">AFE</span>
                 </a>

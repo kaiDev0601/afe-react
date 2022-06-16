@@ -100,10 +100,10 @@ const RequestDetail = () => {
                 <Form.Label>Project Types</Form.Label>
             </div>
             <div className='row'>
-                <div className='col-sm-2'> <Form.Check id="leases" label="Leases"/> </div>
-                <div className='col-sm-3'> <Form.Check id="maintenance" label="CAPEX - Profit Maintenance"/> </div>
-                <div className='col-sm-3'> <Form.Check id="improve" label="CAPEX - Profit Improvement"/> </div>
-                <div className='col-sm-3'> <Form.Check id="repair" label="Repair & Maintenance"/> </div>
+                <div className='col-sm-2'> <Form.Check className="big-check" id="leases" label="Leases"/> </div>
+                <div className='col-sm-3'> <Form.Check className="big-check" id="maintenance" label="CAPEX - Profit Maintenance"/> </div>
+                <div className='col-sm-3'> <Form.Check className="big-check" id="improve" label="CAPEX - Profit Improvement"/> </div>
+                <div className='col-sm-3'> <Form.Check className="big-check" id="repair" label="Repair & Maintenance"/> </div>
             </div>
             <div className='row d-flex justify-content-end'>
                     <Button className="btn-transparent">Next</Button>

@@ -178,7 +178,7 @@ a{
 
 
 button, select{
-  width: fit-content!important;
+  width: fit-content !important;
 }
 
 .btn-darkblue { background-color: #0F0D9A;  }
@@ -209,6 +209,20 @@ button, select{
 .auto-w{width: auto !important;}
 
 /*** Nav Bar ***/
+
+.nav-link span{
+  font-family: 'Roboto' !important;
+  color: #969CBA;
+}
+
+.nav-link.active span,
+.nav-link.active svg{
+  color:white!important;
+}
+
+.nav-link svg{
+  color:black;
+}
 
 .nav-link.active{
   background: #20BCE6 !important;
@@ -242,10 +256,6 @@ button, select{
 
 .afe-logo{
   color: #0f0d9a !important;
-}
-
-.nav-link{
-  color:black;
 }
 
 /***  Header  ***/
@@ -554,7 +564,6 @@ color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-info{
-  width:100%;
   color:white!important;
 }
 
@@ -795,3 +804,30 @@ color: rgba(0, 0, 0, 0.7);
     font-size:0.8em;
 }
 
+
+.font-roboto{
+  font-family: 'Roboto' !important;
+}
+
+.p-3em{
+  padding: 3em !important;
+}
+
+.text-white svg{
+  color:white !important;
+}
+
+.big-check{
+  display: flex;
+  align-items: center;
+}
+.big-check input{
+  margin:0 3px 0 0;
+  width: 30px;
+  height: 30px;
+}
+
+.big-check input:checked{
+  background-color: rgb(0, 162, 0);
+  border: none;
+}

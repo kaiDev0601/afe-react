@@ -90,7 +90,7 @@ const ProjectJustification = () => {
                                         <Form.Control type="text" placeholder='Search Vendor'/>
                                     </div>
                                     <div className='col-sm-1'>
-                                        <Form.Check type="checkbox"/>
+                                        <Form.Check className="big-check" type="checkbox"/>
                                     </div>
                                     <div className='col-sm-2'>
                                         <GrAttachment />

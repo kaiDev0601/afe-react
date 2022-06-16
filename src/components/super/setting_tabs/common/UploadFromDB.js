@@ -40,11 +40,13 @@ const UploadFromDB = () => {
             <div className='d-flex align-items-center justify-content-left'>
                 <Button className="btn-darkblue">Update</Button>
                 <Form.Check 
+                     className="big-check"
                     type="checkbox"
                     id='yes'
                     label="Delete Existing Records"
                 />
                 <Form.Check 
+                 className="big-check"
                     type="checkbox"
                     id='yes'
                     label="Update Duplicates"
