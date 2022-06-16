@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import { FcRefresh } from 'react-icons/fc';
 import {Link} from 'react-router-dom';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 
-import '../../assets/css/afe_request_show.css';
 import MyTable from '../common/MyTable';
+import { setUserType } from '../../actions/auth';
 
 
-const UserAfeRequestShow = () => {
+const UserAfeRequestShow = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('user');
+    }, [setUserType]);
+
     const tHeaders = [  
         "AFE ID",
         "Facility",
@@ -109,4 +119,13 @@ const UserAfeRequestShow = () => {
     )
 };
 
-export default UserAfeRequestShow;
+UserAfeRequestShow.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(UserAfeRequestShow);

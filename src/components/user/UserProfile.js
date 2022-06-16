@@ -1,15 +1,23 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import classnames from 'classnames';
 
-import "../../assets/css/user/profile.css"
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import ProfileUpdate from './ProfileUpdate';
 import PasswordUpdate from './PasswordUpdate';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 import Button from 'react-bootstrap/Button';
+import { setUserType } from '../../actions/auth';
 
-const UserProfile = () => {
+const UserProfile = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('user');
+    }, [setUserType]);
 
     const [tabState, setTabState] = useState({
         isProfileUpdate: true
@@ -35,7 +43,7 @@ const UserProfile = () => {
 
                         <div className='row'>
                             <div className='up-container-left col-sm-3'>
-                                <img className='up-user-avatar' src="../../Avatar.png" alt="a"/>
+                                <img className='sz-10em' src="../../Avatar.png" alt="a"/>
                                 <p className='up-user-name'>Person 3</p>
                                 <p className='up-user-type'>User</p>
                                 <hr/>
@@ -51,4 +59,13 @@ const UserProfile = () => {
     )
 };
 
-export default UserProfile;
+UserProfile.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(UserProfile);

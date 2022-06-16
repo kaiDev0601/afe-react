@@ -1,5 +1,7 @@
-import React from 'react';
-import '../../assets/css/navbar.css';
+import React, { useEffect } from 'react';
+
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import { BsUiChecksGrid } from 'react-icons/bs';
 import { AiOutlineSetting } from  'react-icons/ai';
@@ -7,9 +9,11 @@ import { GiNotebook } from 'react-icons/gi';
 import { BiUserCircle } from 'react-icons/bi';
 import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+const Navbar = ({auth}) => {
 
-    const navLinks = [
+    const type = auth.userType;
+
+    const userNavLinks = [
         {
             id : 1,
             title : 'Dashboard',
@@ -21,12 +25,60 @@ const NavBar = () => {
             title : 'AFE Request',
             icon : <GiNotebook />,
             url : "/user/afe_request_show"
+        }
+    ];
+    const apvNavLinks = [
+        {
+            id : 1,
+            title : 'Dashboard',
+            icon : <BsUiChecksGrid />,
+            url : "/approval/dashboard"
+        },
+        {
+            id : 2,
+            title : 'AFE Request',
+            icon : <GiNotebook />,
+            url : "/approval/afe_request_show"
+        }
+    ];
+    const adminNavLinks = [
+        {
+            id : 1,
+            title : 'Dashboard',
+            icon : <BsUiChecksGrid />,
+            url : "/admin/dashboard"
+        },
+        {
+            id : 2,
+            title : 'AFE Request',
+            icon : <GiNotebook />,
+            url : "/admin/afe_request_show"
         },
         {
             id : 3,
             title : 'Users',
             icon : <BiUserCircle />,
             url : "/admin/users_show"
+        }
+    ];
+    const superNavLinks = [
+        {
+            id : 1,
+            title : 'Dashboard',
+            icon : <BsUiChecksGrid />,
+            url : "/super/dashboard"
+        },
+        {
+            id : 2,
+            title : 'AFE Request',
+            icon : <GiNotebook />,
+            url : "/super/afe_request_show"
+        },
+        {
+            id : 3,
+            title : 'Users',
+            icon : <BiUserCircle />,
+            url : "/super/users_show"
         },
         {
             id : 4,
@@ -34,8 +86,16 @@ const NavBar = () => {
             icon : <AiOutlineSetting />,
             url : "/super/settings"
         }
-        
     ];
+
+    let navLinks;
+    switch(type){
+        case 'user': navLinks = userNavLinks; break;
+        case 'approver': navLinks = apvNavLinks; break;
+        case 'admin': navLinks = adminNavLinks; break;
+        case 'super': navLinks = superNavLinks; break;
+        default: navLinks = userNavLinks; break;
+    }
 
     const itemContent = navLinks.map(nav => (
         <li className="nav-item" key={nav.id}>
@@ -60,4 +120,13 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+
+Navbar.propTypes = {
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { })(Navbar);

@@ -1,11 +1,14 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
-import "../../assets/css/admin/dashboard.css"
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import { Button, Modal } from 'react-bootstrap';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 
 import MyInput from "../common/MyInput";
+import { setUserType } from '../../actions/auth';
 
 
 const MyVerticallyCenteredModal = (props) => {
@@ -45,7 +48,14 @@ const MyVerticallyCenteredModal = (props) => {
   }
 
 
-const AdminDashboard = () => {
+const AdminDashboard = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('admin');
+    }, [setUserType]);
+
     const [modalShow, setModalShow] = useState(false);
 
     return (
@@ -58,10 +68,10 @@ const AdminDashboard = () => {
                         <div className="row">
                             <div className='col-sm-7'>
                                 <div className='white-container h-shadow container'>
-                                    <div className='row adm-res-header'>
+                                    <div className='row mb-2'>
                                         <h5>Notifications</h5>
                                     </div>
-                                    <div className='row adm-res-content'>
+                                    <div className='row dashboard-left-content'>
                                         <div className='col-sm-12'>
                                             <div className='row'>
                                                 <h4>Today</h4>
@@ -148,4 +158,13 @@ const AdminDashboard = () => {
     )
 };
 
-export default AdminDashboard;
+AdminDashboard.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(AdminDashboard);

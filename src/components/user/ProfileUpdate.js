@@ -1,15 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMailForward } from '@fortawesome/free-solid-svg-icons';
 import { FiMail, FiPhone } from "react-icons/fi";
 
 import MyInput from '../common/MyInput';
-import "../../assets/css/user/profile.css"
 
 
 const ProfileUpdate = () => {

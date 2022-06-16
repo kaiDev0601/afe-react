@@ -14,7 +14,7 @@ const MyTable = ({
     return (
         <div>
             <div className='row'>
-                <Table className='afe-request-table' hover>
+                <Table className='cus-table' hover>
                     <thead>
                         <tr>
                             {header.map(head => <th key={Math.random()}>{head}</th>)}

@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import classnames from 'classnames';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 
 
-import '../../assets/css/super/settings.css';
 import SettingsFacility from './setting_tabs/SettingsFacility';
 import GlList from './setting_tabs/GlList';
 import ProjectType from './setting_tabs/ProjectType';
 import BusinessUint from './setting_tabs/BusinessUnit';
+import { setUserType } from '../../actions/auth';
 
-const SuperSettings = () => {
+const SuperSettings = ({
+    auth,
+    setUserType
+}) => {
+
+    useEffect(() => {
+        setUserType('super');
+    }, [setUserType]);
+
     const [ requestTabState, setTabState ] = useState({
         afeRequestStep: 0
     });
@@ -51,4 +63,13 @@ const SuperSettings = () => {
     )
 };
 
-export default SuperSettings;
+SuperSettings.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(SuperSettings);

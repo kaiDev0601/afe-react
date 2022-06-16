@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
@@ -6,13 +10,20 @@ import {Link} from 'react-router-dom';
 
 import { AiOutlineFilePdf } from 'react-icons/ai';
 
-import '../../assets/css/approval/afe_request_show.css';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 import MyTable from '../common/MyTable';
+import { setUserType } from '../../actions/auth';
 
 
-const SuperAfeRequestShow = () => {
+const SuperAfeRequestShow = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('super');
+    }, [setUserType]);
+
     const tHeaders = [  
         "AFE ID",
         "Facility",
@@ -153,4 +164,13 @@ const SuperAfeRequestShow = () => {
     )
 };
 
-export default SuperAfeRequestShow;
+SuperAfeRequestShow.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(SuperAfeRequestShow);

@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-import "../../assets/css/user/profile.css"
 import MyInput from '../common/MyInput';
 
 

@@ -1,11 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
-import "../../assets/css/admin/dashboard.css"
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import { Button, Modal } from 'react-bootstrap';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 
 import MyInput from '../common/MyInput';
+import { setUserType } from '../../actions/auth';
 
 const MyVerticallyCenteredModal = (props) => {
     return (
@@ -44,7 +47,14 @@ const MyVerticallyCenteredModal = (props) => {
   }
 
 
-const SuperDashboard = () => {
+const SuperDashboard = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('super');
+    }, [setUserType]);
+
     const [modalShow, setModalShow] = useState(false);
 
     return (
@@ -57,10 +67,10 @@ const SuperDashboard = () => {
                         <div className="row">
                             <div className='col-sm-7'>
                                 <div className='white-container h-shadow container'>
-                                    <div className='row adm-res-header'>
+                                    <div className='row mb-2'>
                                         <h5>Notifications</h5>
                                     </div>
-                                    <div className='row adm-res-content'>
+                                    <div className='row dashboard-left-content'>
                                         <div className='col-sm-12'>
                                             <div className='row'>
                                                 <h4>Today</h4>
@@ -147,4 +157,14 @@ const SuperDashboard = () => {
     )
 };
 
-export default SuperDashboard;
+
+SuperDashboard.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(SuperDashboard);

@@ -1,6 +1,6 @@
 @font-face {
   font-family: myFirstFont;
-  src: url(fonts/Poppins-Medium.ttf);
+  src: url(./fonts/Poppins-Medium.ttf);
 }
 
 .App {
@@ -207,3 +207,591 @@ button, select{
 
 .yellow{color:yellow;}
 .auto-w{width: auto !important;}
+
+/*** Nav Bar ***/
+
+.nav-link.active{
+  background: #20BCE6 !important;
+  color:white;
+}
+
+.sidebar{
+  box-shadow:grey 2px 2px 8px 1px;
+  background:white;
+}
+
+.afe-mark{
+  margin-left:1.5em;
+  font-size:3rem;
+}
+
+.side-bar-content{
+  padding: 0 !important;;
+  margin:0;
+}
+
+
+.side-bar-content ul,
+.side-bar-content ul .nav-item{
+  width:100%;
+}
+
+.side-bar-content .nav-link{
+  padding: 0.7em !important;
+}
+
+.afe-logo{
+  color: #0f0d9a !important;
+}
+
+.nav-link{
+  color:black;
+}
+
+/***  Header  ***/
+
+.navbar{
+  background-color:#0F0D9A;
+}
+
+.welcome-msg{
+  margin-left:2em;
+}
+.welcome-msg h3{
+  color:white;
+}
+
+.welcome-msg p{
+  color:yellow;
+  margin-bottom: 0;
+}
+
+#collapsibleNavbar{
+  position:absolute;
+  right: 2em;
+}
+
+.navbar-nav{
+  display:flex;
+  align-items:center;
+}
+.navbar-nav .nav-link
+{
+  color:white;  
+}
+.navbar-nav .nav-link:hover{
+  color:rgb(220, 220, 220);
+}
+.nav-splitter{
+  color:white;
+  font-size:2em;
+}
+.user-nav{
+  margin-right:2em;
+}
+
+.user-icon{
+  width:2em;
+  height:2em;
+}
+
+p{
+  margin:0;
+}
+
+.user-item .row{
+  display: flex;
+  align-items: center;
+}
+
+.user-item::after{
+  display: none;
+}
+
+.user-down-arrow{
+  margin-left:0.5em;
+}
+
+.dropdown-item:hover{
+  font-family: 'Roboto';
+  font-style: normal;
+  color: #FFFFFF;
+  background: #20BCE6;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/*** AFE REQUEST SHOW ***/
+
+
+
+.afe-container .row{
+  margin-bottom: 1rem;
+}
+
+.afe-show-tab{
+  font-weight: 500;
+  font-size: 1em;
+  
+  color: #494E67;
+}
+
+.afe-show-tab.inactive{
+  text-decoration: none;
+}
+
+.afe-show-tab:hover{
+  cursor:pointer;
+}
+
+.afe-show-tab.active{
+  /* identical to box height, or 150% */
+  color: #20BCE6;
+}
+
+.cus-table{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cus-table thead th{
+  padding: 1rem;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  color: #494E67;
+}
+
+.cus-table tbody td{
+  padding:1rem; 
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.01em;
+
+  color: #969CBA;
+}
+
+.afe-table-page-state{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  color: #494E67;
+}
+
+.afe-table-global{
+  
+font-weight: 400;
+font-size: 10px;
+line-height: 24px;
+/* identical to box height, or 240% */
+
+letter-spacing: 0.01em;
+
+color: rgba(0, 0, 0, 0.7);
+
+}
+
+.page-navigator{
+  text-align: right;
+}
+.page-navigator button.btn-info{
+  color:white;
+}
+
+
+/*** ADD AFE REQUEST  ****/
+
+.aafe-container{
+  margin: 3em !important;
+}
+
+.aafe-show-tab{
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+  margin-right:1em;
+  text-decoration: none;
+  color: #494E67;
+}
+
+.aafe-show-tab:hover{
+  cursor:pointer;
+}
+
+.aafe-show-tab.active{
+  color: #20BCE6;
+  border-radius: 5px;
+}
+
+.aafe-content-container{
+  background-color: white;
+  padding:1em 3em 1em 3em;
+  margin-top:2em;
+  border-radius:1em;
+
+}
+
+.aafe-content-container .row{
+  padding: 0 3em 0 3em;
+}
+
+.aafe-content-container input{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.aafe-e-dialog{
+  margin-bottom:1em;
+}
+
+.aafe-e-dialog-header{
+  background-color: #0F0D9A;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5em !important;;
+  margin: 0!important;
+}
+
+.aafe-e-dialog-header h6{
+  color: white;
+}
+.aafe-e-dialog-header div{
+  text-align: center;
+}
+
+.aafe-e-dialog-content{
+  border-left: 1px grey solid;
+  border-right: 1px grey solid;
+  padding-bottom:1em;
+}
+
+.aafe-e-dialog-content .row>div{
+  margin-top:1em;
+  text-align: center;
+}
+
+.aafe-e-dialog-footer{
+  border:1px grey solid;
+  padding:1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/*** LOGIN ***/
+
+.col-md-6 {
+  padding: 0px !important;
+}
+
+.half_left {
+  width: 100%;  
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: all 2s ease;
+  background-image: url("img/landing_picture.png");
+  box-shadow:10px 0px 25px 10px rgb(32 188 230 / 30%);
+  height:100vh;
+  overflow: unset;
+  background-size: 100% 100%;
+  display: flex;
+ align-items: center;
+} 
+
+
+.nav-content{
+ background: rgba(255, 255, 255, 0.3);
+ height:30%;
+ width:80%;
+ margin:0 auto;
+ padding:3.5rem;
+ border:1px solid #c4c4c4; 
+ border-radius:25px; 
+}
+
+
+.nav-content h1{
+ color:white;
+ float:right;
+ Font-style: Bold;
+ Font-size: 90px;
+  }
+
+.nav-content h3{
+  color:white;
+  height:1.17em;
+  font-size:31px;
+}
+.logincard{
+  width: 80%;
+  margin: auto;
+  padding: 55px;
+  box-shadow: 0px 4px 25px rgb(32 188 230 / 30%);
+  border-radius: 15px;
+  height: 493px;
+ 
+}
+
+.btn-info{
+  width:100%;
+  color:white!important;
+}
+
+.card  h5{
+  color:#20BCE6;
+  text-align:right !important;
+}
+
+
+
+.sz-10em{
+  width: 10em;
+  height: 10em;
+}
+
+
+
+/*** -----------------------ADMIN CSS---------------------- ******/
+/****  DASHBOARD ****/
+
+
+.dashboard-left-content h3{
+    padding-left:0;
+}
+
+.adm-approved-exp-cont{
+    box-shadow: 0px 5px 25px #DADCE4;
+    border-radius: 10px;
+    padding:1em;
+}
+
+
+/* USERS SHOW **/
+
+
+.link-tab{
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+    margin-right:1em;
+
+    color: #494E67;
+}
+
+
+.link-tab:hover{
+    cursor:pointer;
+}
+
+.link-tab.active{
+    /* identical to box height, or 150% */
+    color: #20BCE6;
+}
+
+.adus-table-global{
+    font-size: 0.8em;
+}
+
+
+/*** -----------------------USER CSS---------------------- ******/
+.up-page-content{
+    margin-top:1em;
+    margin-left:1em;
+    box-shadow:none;
+    border-radius: 10px;
+    padding:3em;
+}
+
+.up-container-left{
+    min-height: 30em;
+    left: 309px;
+    top: 196px;
+    padding-top:2em;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.up-container-left hr{
+    width:10em;
+}
+
+.up-user-name{
+    font-size: 20px;
+    color: #494E67;
+    text-align: center;
+}
+
+.up-user-type{
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    color: #494E67;
+}
+
+.up-container-right{    
+    margin-left:2em;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding:2em;
+}
+
+
+.ud-page-content{
+    margin-top:3em;
+    margin-left:3em;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 25px rgba(15, 13, 154, 0.3);
+    border-radius: 10px;
+    padding:3em;
+}
+
+.ud-notification-item img{
+    width:40px;
+    height: 40px;
+}
+
+
+/*** -----------------------SUPER CSS---------------------- ******/
+.sp-show-tab{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.01em;
+    margin-right:1em;
+    text-decoration: none;
+    color: #494E67;
+}
+
+.sp-show-tab:hover{
+    cursor:pointer;
+}
+
+.sp-show-tab.active{
+    color: #20BCE6;
+    border-radius: 5px;
+}
+
+
+/*** -----------------------SUPER CSS---------------------- ******/
+.apvd-status-div{
+    padding:1em;
+    width: 100%;
+    min-height: 5em;
+    
+    background: #20BCE6;
+    box-shadow: 0px 5px 25px rgba(32, 188, 230, 0.68);
+    border-radius: 10px;
+}
+
+.apvd-pending-icon-div{
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    width: 3.5em;
+    height:3.5em;
+}
+
+.apvd-pending-icon{
+    margin-top:0.1em;
+    font-size:3em;
+}
+
+.apvd-res-header{
+    margin-bottom:1em;
+}
+
+.apvd-res-content h3{
+    padding-left:0;
+}
+
+.apvd-notification-item{
+    width: 742px;
+    height: 109px;
+    margin:0;
+
+    background: rgba(15, 13, 154, 0.3);
+    border-radius: 10px;
+    padding:1em;
+}
+
+.apvd-notification-item img{
+    width:40px;
+    height: 40px;
+}
+
+.apvd-notification-item p{
+        
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+
+.apvd-notif-before-item p{
+        
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+}
+
+
+.apvd-approved-exp-cont{
+    box-shadow: 0px 5px 25px #DADCE4;
+    border-radius: 10px;
+    padding:1em;
+}
+
+
+.apvd-right-container p{
+    font-size:0.8em;
+}
+

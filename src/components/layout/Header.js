@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../../assets/css/Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignOut, faBell, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -35,7 +34,7 @@ const Header = () => {
                                 <li><Link className="dropdown-item" to="/user/profile">Profile Settings</Link></li>
                                 <li><a className="dropdown-item" href={"#"}>Notifications</a></li>
                                 <hr/>
-                                <li><a className="dropdown-item" href={"#"}>Logout</a></li>
+                                <li><a className="dropdown-item" href="/">Logout</a></li>
                             </ul>
                         </li>
                         <li>
@@ -45,10 +44,10 @@ const Header = () => {
                         <li>
                             <a href={"#"} className="nav-link notification dropdown-toggle" data-bs-toggle="dropdown"><FontAwesomeIcon icon={faSignOut} /></a>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/user/profile">a Settings</Link></li>
+                                <li><Link className="dropdown-item" to="/user/profile">Settings</Link></li>
                                 <li><a className="dropdown-item" href={"#"}>Notifications</a></li>
                                 <hr/>
-                                <li><a className="dropdown-item" href={"#"}>Logout</a></li>
+                                <li><a className="dropdown-item" href="/">Logout</a></li>
                             </ul>
 
                         </li>

@@ -1,18 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import classnames from 'classnames';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 
 import RequestDetail from '../afe_tabs/RequestDetail';
 
-import '../../assets/css/super/add_afe_request.css';
 import ProjectJustification from '../afe_tabs/ProjectJustification';
 import CostingDetail from '../afe_tabs/CostingDetail';
 import ROIProjAnalysis from '../afe_tabs/ROIProjAnalysis';
 import OtherExpenses from '../afe_tabs/OtherExpenses';
+import { setUserType } from '../../actions/auth';
 
 
-const SuperAddAfeRequest = () => {
+const SuperAddAfeRequest = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('super');
+    }, [setUserType]);
+
     const [ requestTabState, setTabState ] = useState({
         afeRequestStep: 0
     });
@@ -54,5 +65,13 @@ const SuperAddAfeRequest = () => {
         </div>
     )
 };
+SuperAddAfeRequest.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
 
-export default SuperAddAfeRequest;
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(SuperAddAfeRequest);

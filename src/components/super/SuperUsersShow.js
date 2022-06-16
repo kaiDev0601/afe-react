@@ -1,4 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -9,9 +13,9 @@ import Header from '../layout/Header';
 import { AiOutlineMail, AiTwotonePhone } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
 
-import '../../assets/css/super/users_show.css';
 import MyInput from '../common/MyInput';
 import MyTable from '../common/MyTable';
+import { setUserType } from '../../actions/auth';
 
 
 const MyVerticallyCenteredModal = (props) => {
@@ -126,7 +130,14 @@ const MyVerticallyCenteredModal = (props) => {
 
 
 
-const SuperUsersShow = () => {
+const SuperUsersShow = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('super');
+    }, [setUserType]);
+
     const [modalShow, setModalShow] = useState(false);
 
     
@@ -194,12 +205,12 @@ const SuperUsersShow = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='row adus-show-tabs d-flex align-items-center mb-3'>
+                        <div className='row link-tabs d-flex align-items-center mb-3'>
                             <div className='col-sm-6'>
-                                <a className='adus-show-tab active'>All</a>
-                                <a className='adus-show-tab inactive'>Super Admins</a>
-                                <a className='adus-show-tab inactive'>Approver</a>
-                                <a className='adus-show-tab inactive'>User</a>
+                                <a className='link-tab active'>All</a>
+                                <a className='link-tab inactive'>Super Admins</a>
+                                <a className='link-tab inactive'>Approver</a>
+                                <a className='link-tab inactive'>User</a>
                             </div>
                             <div className='col-sm-6'>
                                 <div className='v-center d-flex justify-content-end'>
@@ -229,4 +240,13 @@ const SuperUsersShow = () => {
     )
 };
 
-export default SuperUsersShow;
+SuperUsersShow.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(SuperUsersShow);

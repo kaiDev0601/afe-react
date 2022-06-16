@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import "../../assets/css/user/userdashboard.css"
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
 import NotifItem from '../common/NotifItem';
+import { setUserType } from '../../actions/auth';
 
-const UserDashboard = () => {
+const UserDashboard = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('user');
+    }, [setUserType]);
+
     return (
         <div className="container-fluid">
             <div className="row">
@@ -25,8 +34,16 @@ const UserDashboard = () => {
                 </div>
             </div>
         </div>
-
-    )
+    );
 };
 
-export default UserDashboard;
+UserDashboard.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(UserDashboard);

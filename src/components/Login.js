@@ -8,7 +8,6 @@ import {
   Card,
   Button
 } from 'react-bootstrap';
-import './Login.css';
 
 import {AiFillEyeInvisible} from 'react-icons/ai';
 

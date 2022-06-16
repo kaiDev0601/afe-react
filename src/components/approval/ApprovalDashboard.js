@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import { GiNotebook } from 'react-icons/gi';
 import Form from 'react-bootstrap/Form';
 
-import "../../assets/css/approval/dashboard.css"
 import { Button } from 'react-bootstrap';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
+import { setUserType } from '../../actions/auth';
 
 
-const ApprovalDashboard = () => {
+const ApprovalDashboard = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('approver');
+    }, [setUserType]);
+
     return (
         <div className="container-fluid">
             <div className="row flex-nowrap">
@@ -183,4 +193,13 @@ const ApprovalDashboard = () => {
     )
 };
 
-export default ApprovalDashboard;
+ApprovalDashboard.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(ApprovalDashboard);

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-import '../../assets/css/add_afe_request.css';
+
 import ProjectJustification from '../afe_tabs/ProjectJustification';
 import CostingDetail from '../afe_tabs/CostingDetail';
 import ROIProjAnalysis from '../afe_tabs/ROIProjAnalysis';
@@ -10,9 +12,17 @@ import OtherExpenses from '../afe_tabs/OtherExpenses';
 import RequestDetail from '../afe_tabs/RequestDetail';
 import Navbar from '../layout/Navbar';
 import Header from '../layout/Header';
+import { setUserType } from '../../actions/auth';
 
 
-const UserAddAfeRequest = () => {
+const UserAddAfeRequest = ({
+    auth,
+    setUserType
+}) => {
+    useEffect(() => {
+        setUserType('user');
+    }, [setUserType]);
+
     const [ requestTabState, setTabState ] = useState({
         afeRequestStep: 0
     });
@@ -56,4 +66,13 @@ const UserAddAfeRequest = () => {
     )
 };
 
-export default UserAddAfeRequest;
+UserAddAfeRequest.propTypes = {
+    setUserType: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setUserType })(UserAddAfeRequest);
