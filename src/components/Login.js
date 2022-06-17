@@ -52,7 +52,7 @@ export default class Login extends Component {
                   <AiFillEyeInvisible/>
                 </InputGroup.Text>
               </InputGroup>
-              <Button className='full-width btn btn-info' >Login</Button>
+              <a className='full-width btn btn-info' href="/user/dashboard">Login</a>
               <h5>Forgot Password?</h5>
             </Card.Body>
           </Card>
